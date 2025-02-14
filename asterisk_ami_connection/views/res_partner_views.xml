@@ -1,0 +1,17 @@
+<odoo>
+    <record id="view_partner_form_asiapardaz" model="ir.ui.view">
+        <field name="name">res.partner.form.asiapardaz</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button name="action_call_phone" type="object" string="Call Phone"
+                            class="oe_highlight" icon="fa-phone"/>
+                    <button name="action_call_mobile" type="object" string="Call Mobile"
+                            class="oe_highlight" icon="fa-mobile"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>

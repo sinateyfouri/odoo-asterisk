@@ -1,0 +1,10 @@
+<odoo>
+    <record id="asiapardaz_voip_assets" model="ir.asset">
+        <field name="name">Asiapardaz VoIP Assets</field>
+        <field name="bundle">web.assets_backend</field>
+        <field name="active" eval="True"/>
+        <field name="target">web</field>
+        <field name="directive">append</field>
+        <field name="path">asiapardaz_voip/static/src/js/asia_call.js</field>
+    </record>
+</odoo>

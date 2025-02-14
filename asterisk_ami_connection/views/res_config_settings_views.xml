@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form_asiapardaz" model="ir.ui.view">
+            <field name="name">asiapardaz.voip.settings</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//block[@name='integration']" position="inside">
+                     <group>
+
+                            <setting help="Originate Calls With Customers; \n more info https://asiapardaz.ir" string="AsiaPardazVoip">
+                                <field name="use_asiapardaz_voip"/>
+                                <div class="content-group">
+                                    <div class="col-12">
+                                        <div>
+                                            <label for="asiapardaz_server"/>
+                                            <br/>
+                                            <field name="asiapardaz_server" string="Server Address"/>
+                                        </div>
+                                        <div>
+                                            <label for="asiapardaz_port"/>
+                                            <br/>
+                                            <field name="asiapardaz_port" string="AMI Port"/>
+                                        </div>
+                                        <div>
+                                            <label for="asiapardaz_user"/>
+                                            <br/>
+                                            <field name="asiapardaz_user" string="AMI User"/>
+                                        </div>
+                                        <div>
+                                            <label for="asiapardaz_password"/>
+                                            <br/>
+                                            <field name="asiapardaz_password" string="AMI Password" password="True"/>
+                                        </div>
+                                        <div>
+                                            <label for="asiapardaz_context"/>
+                                            <br/>
+                                            <field name="asiapardaz_context" string="Context"/>
+                                        </div>
+                                    </div>
+                               </div>
+                            </setting>
+                     </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
